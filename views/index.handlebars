@@ -1,0 +1,20 @@
+<div class="container">
+   <h1>Testing .catch</h1>
+   <h2>Put what you are going to email Jeff</h2>
+   <form method="POST" action="/sendTask" >
+      <input type="text" name="task" id="task" required>
+      <button type="submit" id="submit">Add Task</button>
+   </form>
+   <div id="tasks_container">
+      <ul>
+         {{#each tasks}}
+         {{!-- {{#if (isCompleted status)}}
+         <li class="completed">{{task}}</li>
+         {{else}}    
+         <li class="ongoing">{{task}}</li>
+         {{/if}} --}}
+         <li>{{task}}</li>
+         {{/each}}
+      </ul>
+   </div>
+</div> 
